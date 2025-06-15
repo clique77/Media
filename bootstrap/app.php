@@ -20,7 +20,7 @@ return Application::configure(basePath: dirname(__DIR__))
         $middleware->alias([
             'email.verify' => EmailVerificationMiddleware::class,
         ]);
-
+        $middleware->trustProxies(at: '*');
         $middleware->append(SetLocaleMiddleware::class);
     })
     ->withExceptions(function (Exceptions $exceptions) {
