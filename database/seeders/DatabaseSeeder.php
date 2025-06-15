@@ -6,6 +6,7 @@ use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
+use App\Events\Social\User\UserRegisteredEvent;
 
 class DatabaseSeeder extends Seeder
 {
@@ -16,11 +17,12 @@ class DatabaseSeeder extends Seeder
     {
         // User::factory(10)->create();
 
-        User::factory()->create([
+       $user = User::factory()->create([
             'username' => 'NightFury',
             'email' => 'brawltop155@gmail.com',
             'password' => Hash::make('123321123321'),
             'role' => 'admin',
         ]);
+        event(new UserRegisteredEvent($user));
     }
 }
