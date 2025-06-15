@@ -273,6 +273,9 @@ const HomePage = () => {
                                         whileTap={{ scale: 0.95 }}
                                         variant="outlined"
                                         size="large"
+                                        onClick={() => {
+                                            navigate('/chats')
+                                        }}
                                         sx={{
                                             color: "#ffffff",
                                             borderColor: "rgba(255, 255, 255, 0.3)",
@@ -288,7 +291,7 @@ const HomePage = () => {
                                         }}
                                         startIcon={<FiPlay />}
                                     >
-                                        Демо
+                                        Почати
                                     </Button>
                                 </Box>
 
