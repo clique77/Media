@@ -26,7 +26,7 @@ import { useInfiniteQuery, useMutation, useQuery } from 'react-query';
 import { useNavigate, useParams } from 'react-router-dom';
 import PostCard from '@/components/Social/PostCard.jsx';
 import { postActions, tagActions } from '@/api/actions';
-import { useAuth } from '@/components/Auth/AuthProvider.jsx';
+import { useAuth } from '@/Components/Auth/AuthProvider.jsx';
 import { toast } from 'react-toastify';
 import ErrorMessage from '@/components/Social/ErrorMessage.jsx';
 import { normalizeAttachments } from '@/utils/normalizeAttachments';
