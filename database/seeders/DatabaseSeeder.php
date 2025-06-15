@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder
             'username' => 'NightFury',
             'email' => 'brawltop155@gmail.com',
             'password' => Hash::make('123321123321'),
+            'role' => 'admin',
         ]);
     }
 }
