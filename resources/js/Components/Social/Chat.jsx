@@ -330,9 +330,10 @@ const ChatComponent = ({chatUser, isLoading}) => {
 
     // Scroll to bottom
     const scrollToBottom = useCallback(
-        (options = {behavior: 'smooth'}) => {
+    (options = { behavior: 'smooth' }) => {
+        setTimeout(() => {
             if (messagesEndRef.current && messagesContainerRef.current) {
-                const {scrollTop, scrollHeight, clientHeight} = messagesContainerRef.current;
+                const { scrollTop, scrollHeight, clientHeight } = messagesContainerRef.current;
                 const isNearBottom = scrollHeight - scrollTop - clientHeight < 200;
                 if (isNearBottom || options.force) {
                     messagesEndRef.current.scrollIntoView(options);
@@ -340,9 +341,10 @@ const ChatComponent = ({chatUser, isLoading}) => {
                     markMessagesAsRead();
                 }
             }
-        },
-        [markMessagesAsRead],
-    );
+        }, 0);
+    },
+    [markMessagesAsRead],
+);
 
     // Initial scroll on load
     useEffect(() => {
