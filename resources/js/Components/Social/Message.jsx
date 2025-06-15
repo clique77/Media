@@ -544,8 +544,6 @@ const Message = ({ message, chatId, id, previousMessage, nextMessage }) => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3 }}
                 id={id}
-                onMouseEnter={() => setIsHovered(true)}
-                onMouseLeave={() => setIsHovered(false)}
                 style={{
                     display: 'flex',
                     justifyContent: isOwnMessage ? 'flex-end' : 'flex-start',
