@@ -1,0 +1,25 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    height: auto;
+}
+
+body {
+    background: linear-gradient(
+        to bottom,
+        #0e0515,
+        #0b0410,
+        #08030c,
+        #050207,
+        #020103,
+        #000000
+    );
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}

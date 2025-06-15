@@ -1,0 +1,59 @@
+/* src/styles/quill.css */
+.ql-container {
+    background-color: rgba(20, 20, 30, 0.95);
+    color: #e0e0e0;
+    border: 1px solid rgba(156, 39, 176, 0.3) !important;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.ql-toolbar {
+    background-color: rgba(20, 20, 30, 0.95);
+    border: 1px solid rgba(156, 39, 176, 0.3) !important;
+    border-bottom: none !important;
+    border-radius: 4px 4px 0 0;
+    padding: 4px !important;
+}
+
+.ql-toolbar .ql-stroke {
+    stroke: #e0e0e0;
+}
+
+.ql-toolbar .ql-fill {
+    fill: #e0e0e0;
+}
+
+.ql-toolbar .ql-picker {
+    color: #e0e0e0;
+}
+
+.ql-toolbar .ql-picker-options {
+    background-color: rgba(20, 20, 30, 0.95);
+    border: 1px solid rgba(156, 39, 176, 0.3);
+    color: #e0e0e0;
+}
+
+.ql-editor {
+    min-height: 180px;
+    max-height: 300px;
+    overflow-y: auto;
+    color: #e0e0e0;
+}
+
+.ql-editor::before {
+    color: #808080 !important;
+    font-style: italic;
+}
+
+@media (max-width: 600px) {
+    .ql-container {
+        font-size: 12px;
+    }
+    .ql-toolbar {
+        padding: 2px !important;
+    }
+    .ql-editor {
+        min-height: 150px;
+        max-height: 220px;
+    }
+}
