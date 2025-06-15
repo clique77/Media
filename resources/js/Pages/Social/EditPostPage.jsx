@@ -24,11 +24,11 @@ import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 import { useInfiniteQuery, useMutation, useQuery } from 'react-query';
 import { useNavigate, useParams } from 'react-router-dom';
-import PostCard from '@/components/Social/PostCard.jsx';
+import PostCard from '@/Components/Social/PostCard.jsx';
 import { postActions, tagActions } from '@/api/actions';
 import { useAuth } from '@/Components/Auth/AuthProvider.jsx';
 import { toast } from 'react-toastify';
-import ErrorMessage from '@/components/Social/ErrorMessage.jsx';
+import ErrorMessage from '@/Components/Social/ErrorMessage.jsx';
 import { normalizeAttachments } from '@/utils/normalizeAttachments';
 import { STORAGE_URL, STORAGE_PRIVATE_POST_URL } from '@/config/env';
 
