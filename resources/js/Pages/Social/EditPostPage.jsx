@@ -621,7 +621,7 @@ return (
                                     onDrop={handleDrop}
                                 >
                                     <Typography variant="body2" sx={{ color: '#e0e0e0', mb: 1, fontSize: '0.9rem' }}>
-                                        Перетягніть файли (jpg, png, mp4) або
+                                        Перетягніть файли (jpg, png, mp4) до 1MB або
                                     </Typography>
                                     <Button
                                         variant="contained"
