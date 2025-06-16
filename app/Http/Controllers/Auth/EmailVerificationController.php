@@ -22,7 +22,7 @@ class EmailVerificationController extends Controller
         $request->fulfill();
 
         return response()->json([
-            'message' => 'Your email has been verified!'
+            'message' => 'Електронна адреса успішно підтверджена. Поверніться на платформу та перезавантажте сторінку.'
         ], 200);
     }
 
